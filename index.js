@@ -71,6 +71,18 @@ async function run() {
             console.log(req.body);
         });
 
+        // Update API
+        // app.put('/bookings/:id', async (req, res) => {
+        //     const id = req.params.id;
+        //     console.log(id);
+        //     const status = req.body;
+        //     console.log(status);
+        //     const query = { _id: Object(id) };
+        //     console.log(query);
+        //     // const result = await bookingCollection.updateOne(query);
+        //     // res.json(result);
+        // })
+
         // DELETE API
         app.delete('/bookings/:id', async (req, res) => {
             const id = req.params.id;
